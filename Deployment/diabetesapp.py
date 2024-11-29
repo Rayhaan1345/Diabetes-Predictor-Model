@@ -1,4 +1,4 @@
-
+from fastai import *
 import streamlit as st
 import csv
 
