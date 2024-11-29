@@ -1,6 +1,5 @@
-from fastai import *
+
 import streamlit as st
-from fastbook import *
 import csv
 
 link_for_train = 'https://www.kaggle.com/code/rayhaank/diabetes-predictor'
