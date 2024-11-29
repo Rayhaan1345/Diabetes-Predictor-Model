@@ -4,12 +4,14 @@ import streamlit as st
 import csv
 
 link_for_train = 'https://www.kaggle.com/code/rayhaank/diabetes-predictor'
+
 #Title
 st.title(':violet[Diabetes predictor ML web app]')
 st.subheader("By: Rayhaan Khan")
 st.info("This app is a project and should not be used instead of a medical professionals advice. Anyone facing symptoms should contact a licensed medical practionier first.")
 
 gluc = 'https://drive.google.com/file/d/1ur8gpMcK5C09tV6GVFthQXFm8pCiwGs6/view?usp=sharing'
+st.markdown("Kindly visit this link for feedback. Your feedback is greatly appreciated.: https://forms.gle/ZtB5qkQT73KvWb867 ")
 
 #sliders
 st.header(":green[**Please enter the following values**]")
