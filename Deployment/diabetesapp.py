@@ -5,13 +5,14 @@ import csv
 
 link_for_train = 'https://www.kaggle.com/code/rayhaank/diabetes-predictor'
 #Title
-st.title(':violet[ Interactive Report on how different parameters impact diabetes]')
+st.title(':violet[Diabetes predictor ML web app]')
 st.subheader("By: Rayhaan Khan")
+st.info("This app is a project and should not be used instead of a medical professionals advice. Anyone facing symptoms should contact a licensed medical practionier first.")
 
 gluc = 'https://drive.google.com/file/d/1ur8gpMcK5C09tV6GVFthQXFm8pCiwGs6/view?usp=sharing'
 
 #sliders
-st.header(":green[**Lets start changing some parameters**]")
+st.header(":green[**Please enter the following values**]")
 glucose = st.slider("**Glucose amount (mg/dL) [ref. 100]**", 0, 199, 100)
 bmi = st.slider("**BMI (Body Mass Index) [ref 30]**", 0, 67, 33)
 insulin = st.slider("**Insuliin concentration(2-Hour serum insulin (mu U/ml) [ref. 80-100]**", 0, 846, 122)
