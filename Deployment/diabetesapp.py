@@ -25,7 +25,7 @@ DiabetesPedigreeFunction = 0.627
 Age = st.slider("**Age**", 0, 100, 50)
 
 
-learn = load_learner('Deployment/model.pkl')
+#learn = load_learner('Deployment/model.pkl')
 
 if st.button("press to run", type="primary"):
     with open('Deployment/diabetes.csv', 'a') as file:
