@@ -1,3 +1,6 @@
+!pip uninstall fastai
+pip install fastcore==1.7.29 fastai==2.7.19
+
 from fastai import *
 from fastbook import *
 import streamlit as st
