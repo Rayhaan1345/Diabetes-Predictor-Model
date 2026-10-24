@@ -33,14 +33,14 @@ if st.button("press to run", type="primary"):
     with open('Deployment/diabetes.csv', 'a') as file:
         writer = csv.writer(file)
         writer.writerow([pregnancies, glucose, bloodp, SkinThickness, insulin, bmi, DiabetesPedigreeFunction, Age])
+        file.flush()
         learn = load_learner('Deployment/model.pkl')
         test = pd.read_csv('Deployment/diabetes.csv')
         dl = learn.dls.test_dl(test)
         preds = learn.get_preds(dl=dl)
         preds = [x.item() for x in preds[0]]
         test['Outcome'] = preds
-        st.warning('ignore first outcome. Use the second one.')
-        st.info(preds)
+        st.info(preds[-1])
 
 
 

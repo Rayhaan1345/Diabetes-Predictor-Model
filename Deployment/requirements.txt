@@ -2,3 +2,4 @@ fastcore==1.7.29
 fastbook
 fastai==2.7.19
 joblib
+pandas<3
